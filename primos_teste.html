@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Hello Números Primos!");
+       
+        // se x for 4.
+        //e o i contador começar no 1
+         // toda vez que não for divisivel o if da true
+        //e toda vez que for divisivel conta no contador 
+        //4 > 1 ? sim, 1 >1 ? não,  rest de 4/1 é 0 ? Não, então não é divisível
+        //&& tem que dar tudo true, se não, passa pro else, nesse caso deu 2 false.
+        // 4>2 ? sim, 2> 1 ? sim, rest de 4/2 é 0 ? sim, então é divisivel.
+        //conta pro cont
+        //4>3 ? sim, 3>1 ? sim, rest de 4/3 é 0 ? não, então não é divisivel.
+        // 4>4 ? não, 4>4 ? sim, rest de 4/4 é 0 ? sim, então é divisivel.
+       // conta pro cont
+        //se cont for igual a 2, imprima é primo
+        // se não for, imprima não é primo 
+        
+        function calculo_primo (x)
+        {
+            var cont= 0; 
+            for ( var i = 1; i <= x; i++ )
+            {
+                
+                if  (  x > i && i > 1 && x % i !=0)
+                {
+                    
+                }
+                else 
+                {
+                    cont++;
+                }
+
+            }
+           
+            if (cont==2 )
+            {
+               console.log("é primo")
+
+            }
+
+            else
+            {
+                console.log("Não é primo")
+            }
+            return x; 
+        }
+        
+    </script>
+
+    
+</body>
+</html>
